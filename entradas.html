@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!--Diseño responsive BULMA-->
+
+  <!--hoja estilos bulma descargada en carpeta CSS-->
+  <link rel="stylesheet" type="text/css" href="./css/bulma.css" />
+  <!--Hoja de estilos de fontawesome online-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="./images/cinema.png">
+  <link href="https://unpkg.com/bulma-calendar@6.0.7/dist/css/bulma-calendar.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/bulma-calendar@6.0.7/dist/js/bulma-calendar.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<!-- COLORES
+  Morado Hero Principal: #766280
+  Morado Claro: #9EOBED
+  Morado OScuro: #570966
+-->
+
+<body>
+
+
+  <section class="container">
+    <!-- ESTE ES EL CONTAINER CON TABS QUE HACEN DE MENÚ PRINCIPAL: CARTELERA, ENTRADAS Y CONTACTO-->
+    <div class="tabs is-centered">
+      <ul>
+        <li class="is-active">
+          <a>
+            <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+            <span>CARTELERA</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+            <span>ENTRADAS</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+            <span>CONTACTO</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="hero is-primary is-halfheight">
+    <!-- HERO PRINCIPAL CON NAV, LEVEL CON DOS SECCIONES: DERECHA EL LOGO, IZQUIERDA EL TEXTO DAMeCINE-->
+    <nav class="level">
+      <div class="level-left">
+        <section class="section is-medium">
+          <figure class="image">
+            <img src="./images/cinema.png">
+          </figure>
+        </section>
+      </div>
+      <div class="level-right">
+        <section class="section is-medium">
+          <h1 class="title is-1">DAMeCINE</h1>
+        </section>
+      </div>
+    </nav>
+  </section>
+
+  <!--SECCIÓN "COMPRA ENTRADAS"-->
+  <section class="hero is-warning is-small">
+    <!--HERO SECUNDARIO CON 1 BODY CON 2 TÍTULOS <H1>COMPRA TUS ENTRADAS</H1> Y <H2>¡¡CORRE QUE SE AGOTANNNNN!!</H2> 
+    EL H1 CONTIENE TEXTO FORMATEADO COMO "has-text-warning"
+    EL H2 CONTIENE TEXTO FORMATEADO COMO "has-text-white"-->
+    <div class="hero-body has-text-centered">
+      <h1 class="has-text-warning">COMPRA TUS ENTRADAS</h1>
+      <h2 class="has-text-white">¡¡CORRE QUE SE AGOTANNNNN!!</h2>
+    </div>
+  </section>
+  <!--FIN SECCIÓN "COMPRA ENTRADAS"-->
+
+  <!--FORMULARIO COMPRA-->
+  
+  <section class="container">
+    <!--SECCIÓN QUE CONTIENE UN LAYOUT DE COLUMNAS CON 1 ÚNICA COLUMNA CENTRADA QUE OCUPA 1/3 DEL ANCHO DE LA PÁGINA. 
+      ESA COLUMNA CONTIENE LOS CAMPOS DEL FORMULARIO
+    VALIDACIÓN DEL FORMULARIO: SEGÚN SE ESPECIFICA EN EL ENUNCIADO-->
+    <form id="form">
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <div class="field">
+          <label class="label">Nombre y Apellidos</label>
+          <div class="control has-icons-left">
+            <input id="name" name="nombreCompleto" class="input" type="text" placeholder="Ana Perez Gimenez">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">DNI</label>
+          <div class="control  has-icons-left">
+            <input id="dni" class="input" name="dni" type="text" placeholder="123456789X">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control  has-icons-left">
+            <input id ="email"  class="input" name="email" type="email" placeholder="e.g. alexsmith@gmail.com">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Confirmar Email</label>
+          <div class="control  has-icons-left">
+            <input id="emailConfirm" name="confirmar" class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Telefono</label>
+          <div class="control  has-icons-left">
+            <input id="tlfn" class="input"  name="telefono" type="text" placeholder="645122314">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <p class="control has-icons-left">
+            <span class="select">
+              <select>
+                <option selected>Country</option>
+                <option>Select dropdown</option>
+                <option>With options</option>
+              </select>
+            </span>
+            <span class="icon is-small is-left">
+              <i class="fas fa-globe"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <label class="label">Fecha</label>
+          <div class="control  has-icons-left">
+            <input type="date" class="input" id="date" name="date" value="2019-10-22">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Número de entradas</label>
+          <div class="control  has-icons-left">
+            <input class="input"  name="numEntrada" id="numEntrada" type="text" placeholder="0">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        </div>
+        <fieldset disabled>
+          <div class="field">
+            <label class="label">Precio</label>
+            <div class="control  has-icons-left">
+              <input class="input" type="text" name="precio" id="precio">
+              <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+            </div>
+          </div>
+        </fieldset>
+        <label class="checkbox">
+          <input type="checkbox">
+          ACEPTO LOS <span>TERMINOS Y CONDICIONES</span>
+        </label>
+        <div class="field is-grouped">
+          <div class="control">
+            <button id="btnPrecio" class="button is-link">Calcular Precio</button>
+          </div>
+          <div class="control">
+            <button id="btnEnviar" class="button is-link is-light">Enviar</button>
+          </div>
+          <div class="control">
+            <button  id="btnBorrar" class="button is-link is-light">borrar</button>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </form>
+  </section>
+  
+  <!--FIN FORMULARIO COMPRA-->
+  <!--FOOTER-->
+  <footer class="footer">
+    <!--SECCIÓN QUE CONTIENE:
+      - iframe de maps tiene un ancho de 1200 píxels
+      - texto de datos de contacto es de la clase "has-text-warning" y tamaño 6 de bulma
+      - texto del copyright es de la clase "has-text-white" y tamaño 7 de bulma
+    -->
+    <!-- <div class="mapouter">
+      <div class="gmap_canvas"><iframe width="1200" height="500" id="gmap_canvas"
+          src="https://maps.google.com/maps?q=morea%20pamplona&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+          scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123
+          movies</a><br>
+        <style>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            height: 500px;
+            width: 1200px;
+          }
+        </style><a href="https://www.embedgooglemap.net">google maps on websites</a>
+        <style>
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 500px;
+            width: 1200px;
+          }
+        </style>
+      </div>
+    </div> -->
+    <h3>Olovorgo</h3>
+    <h4>copyright</h4>
+  </footer>
+  <!--FIN FOOTER-->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

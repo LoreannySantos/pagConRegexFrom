@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+ <!--Diseño responsive BULMA-->
+  
+  <!--hoja estilos bulma descargada en carpeta CSS-->
+  <link rel="stylesheet" href="./css/bulma.css">
+  <!--Hoja de estilos de fontawesome online-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!--favicon-->
+  <link rel="shortcut icon" type="image/png" href="./images/cinema.png" />
+</head>
+
+<!-- COLORES
+  Morado Hero Principal: #766280
+  Morado Claro: #9EOBED
+  Morado OScuro: #570966
+-->
+
+<body >
+  <section class="container">
+   <!-- ESTE ES EL CONTAINER CON TABS QUE HACEN DE MENÚ PRINCIPAL: CARTELERA, ENTRADAS Y CONTACTO-->
+   <div class="tabs is-centered">
+    <ul>
+      <li class="is-active">
+        <a href="./index.html">
+          <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+          <span>CARTELERA</span>
+        </a>
+      </li>
+      <li>
+        <a href="./entradas.html">
+          <span class="icon is-small"><i class="fa-solid fa-ticket"></i></span>
+          <span>ENTRADAS</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <span class="icon is-small"><i class="fa-solid fa-comment-dots"></i></span>
+          <span>CONTACTO</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </section>
+
+  <section class="hero is-primary is-halfheight">
+    <!-- HERO PRINCIPAL CON NAV LEVEL CON DOS SECCIONES: DERECHA EL LOGO, IZQUIERDA EL TEXTO DAMeCINE-->
+    <nav class="level">
+      <div class="level-left">
+          <section class="section is-medium">
+            <figure class="image">
+              <img src="./images/cinema.png">
+            </figure>
+          </section>
+      </div>
+      <div class="level-right">
+        <section class="section is-medium">
+          <h1 class="title is-1 has-text-primary">DAMECINE</h1>
+        </section>
+      </div>
+    </nav>
+  </section>
+
+  <section class="section">
+    <!--
+      Sección que contiene un "level" de bulma con 3 items con texto centrado
+      Los títulos son de la clase "has-text-primary, de tamaño 4 de bulma y con texto en negrita definido por una clase de bulma
+    -->
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div>
+          <h2 class="title is-4 has-text-primary">PELICULAS</h2>
+          <p class="title">+50</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <h2 class="title is-4 has-text-primary">SALAS</h2>
+          <p class="title">20</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <h2 class="title is-4 has-text-primary">ESPECTADORES</h2>
+          <p class="title">+1000</p>
+        </div>
+      </div>
+    </nav>
+    </section>
+
+   <section class="hero is-warning is-small">
+    <!--HERO SECUNDARIO CON 1 BODY CON 2 TÍTULOS <H1>ULTIMAS NOVEDADES</H1> Y <H2>YA DISPONIBLES</H2> 
+    EL H1 CONTIENE TEXTO FORMATEADO COMO "has-text-warning"
+    EL H2 CONTIENE TEXTO FORMATEADO COMO "has-text-white"-->
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-2 has-text-warning mt-6">ULTIMAS NOVEDADES</h1>
+      <h2 class="subtitle is-4 has-text-white pb-6">Ya disponibles...</h2>
+    </div>
+  </section>
+
+  <div class="columns">
+    <!--
+      Sección de la clase "columns" de bulma con 3 columnas repartidas en 3 partes iguales.
+      Cada columna cotiene un elemento de la clase "card" de bulma (figura de clase imagen is-4by3, titulo is-4, subtitulo is-6)
+    -->
+    <div class="column is-one-third">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="./images/poster-cruella.jpeg" alt="Poster pelicula cruella">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media-content">
+            <p class="title is-4">CRUELLA</p>
+            <p class="subtitle is-6 pb-5">CRIMEN, COMEDIA</p>
+          </div>
+          <div class="content">
+            COMEDIA CRIMINAL BASADA EN EL PERSONAJE CRUELLA DE VIL, DE LA NOVELA LOS CIEN Y UN DALMATAS DE 1956 DE DIDDIE SMITH.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="./images/poster-spiral.jpeg" alt="Poster pelicula cruella">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media-content">
+            <p class="title is-4">SPIRAL</p>
+            <p class="subtitle is-6 pb-5">SERENDIPITY PRODUCTIONS</p>
+          </div>
+          <div class="content">
+            REINICIO DE LA SAGA 'SAW'. EL DETECTIVE ZEKE BANKS TOMA LAS RIENDAS DE UNA INVESTIGACION DE ASESINATOS.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="./images/poster-despierta.jpeg" alt="Poster pelicula cruella">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media-content">
+            <p class="title is-4">DESPIERTA LA FURIA</p>
+            <p class="subtitle is-6 pb-5">METRO GOLDWYN MAYER</p>
+          </div>
+          <div class="content">
+            PELICULA DE SUSPENSE Y ACCIÓN DE GUY RITCHIE BASADA EN LA PALÍCULA 'LE CONVOYEUR' DE NICOLAS BOUKHREF.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+  <footer class="footer">
+    <!--SECCIÓN QUE CONTIENE:
+      - iframe de maps tiene un ancho de 1200 píxels
+      - texto de datos de contacto es de la clase "has-text-warning" y tamaño 6 de bulma
+      - texto del copyright es de la clase "has-text-white" y tamaño 7 de bulma
+    -->
+  </footer>
+
+</body>
+</html>
